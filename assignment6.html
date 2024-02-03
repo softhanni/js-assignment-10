@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment 6:innerHTML, innertext and text content | And differences</h1>
+     <h2></h2>
+     <h3></h3>
+     <h4></h4>
+
+     <script>
+
+// console.log(document.body.childNodes);
+var h2 = document.body.childNodes[3];
+h2.innerHTML = "innerHTML";
+//if you use <h1> in innerHTML then it is considered as a tag.
+
+var h3 = document.body.childNodes[5];
+h3.innerText = "innerText";
+//if you use <h1> and console then it prints as it is, not considering as a h1 tag
+    
+var h3 = document.body.childNodes[7];
+h3.textContent = "textContent";
+//if we use textContent and console then it prints evry space you added in your content. whike innerHTML and innerText prints only one space no matter how many spaces are there in content.
+     </script>
+</body>
+</html>

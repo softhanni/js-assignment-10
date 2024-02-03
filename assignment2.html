@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment 2: Adding and Removing List Items with Delay</h1>
+    <ul>
+        <!-- <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+        <li>list 5</li> -->
+    </ul>
+
+    <script>
+        
+        
+var ul = document.body.childNodes[1];
+var li = document.createElement("li");
+var liContent = document.createTextNode("list 1");
+li.appendChild(liContent);
+ul.appendChild(li);
+
+// var ul = document.body.childNodes[5];
+var li = document.createElement("li");
+var liContent = document.createTextNode("list 2");
+li.appendChild(liContent);
+ul.appendChild(li);
+
+var li = document.createElement("li");
+var liContent = document.createTextNode("list 3");
+li.appendChild(liContent);
+ul.appendChild(li);
+
+var li = document.createElement("li");
+var liContent = document.createTextNode("list 4");
+li.appendChild(liContent);
+ul.appendChild(li);
+
+var li = document.createElement("li");
+var liContent = document.createTextNode("list 5");
+li.appendChild(liContent);
+ul.appendChild(li);
+
+//Remove
+function rem1 (){
+    document.body.childNodes[1].childNodes[1].remove()
+};
+setTimeout(rem1,2000);
+setTimeout(rem1,4000);
+setTimeout(rem1,6000);
+setTimeout(rem1,8000);
+setTimeout(rem1,10000);
+    </script>
+</body>
+</html>
